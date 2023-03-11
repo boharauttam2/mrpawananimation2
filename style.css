@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quintessential&family=Raleway&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.471)),
+    url("https://images.unsplash.com/photo-1544442069-97dded965a9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2231&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  color: white;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.even-cols {
+  display: flex;
+}
+
+img {
+  height: 8rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: 10% 37%;
+}
+
+.img-container + p {
+  padding: 1.2rem;
+}
+
+/*  Reveal text */
+
+.reveal-text--1,
+.reveal-text--2 {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  opacity: 0;
+}
+
+.reveal-text--2 {
+  transform: translateY(-10rem);
+}
+
+.hero__content--1 {
+  transform: translateY(10rem);
+}
+
+.features > * {
+  opacity: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.img-out {
+  height: 80vh;
+  position: relative;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  color: white;
+}
+
+.bg--1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.471)),
+    url("https://images.unsplash.com/photo-1670272498456-a9f02e3cead9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+}
+
+.bg--2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.471)),
+    url("https://images.unsplash.com/photo-1678436749270-c3c66a346bf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1190&q=80");
+  clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.uttam {
+  font-size: 2.8rem;
+  margin-bottom: 2.6rem;
+}
+
+.char {
+  opacity: 0;
+}
